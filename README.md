@@ -23,63 +23,23 @@ This is NOT a replacement for your CLAUDE.md. It's a reference your agent reads 
 
 ## Quick Start
 
-**Option A: Just the reference (fastest)**
-
-Copy the contents of the [Blueprint section](#the-claudeclaw-blueprint) below and paste it into a file in your workspace (e.g., `claudeclaw-reference.md`). Tell your Claude Code to read it.
-
-**Option B: Full starter template**
-
-Clone this repo and use the `template/` folder as your starting workspace:
-
-```bash
-git clone https://github.com/robonuggets/claudeclaw.git
-cd claudeclaw/template
-```
-
-The template includes a 3-agent starter setup with example configs. Your agent can adapt it to your needs.
-
----
-
-## The Starter Template
-
-The `template/` directory contains a ready-to-use workspace:
+Paste this into your Claude Code:
 
 ```
-template/
-├── CLAUDE.md              # Primary agent config (customize this)
-├── SOUL.md                # Agent personality (customize this)
-├── USER.md                # Your profile (fill this in)
-├── cron-registry.json     # Example cron jobs
-├── .claude/skills/        # Shared skills (all agents can use)
-│   └── daily-summary.md   # Example shared skill
-├── .vscode/tasks.json     # VS Code launch shortcut (Ctrl+Shift+P)
-├── shared/                # Shared data across agents
-├── memory/                # Shared memory/logs
-└── agents/
-    ├── alpha/             # First sub-agent
-    │   ├── CLAUDE.md
-    │   ├── .claude/skills/
-    │   │   └── code-review.md    # Example agent-specific skill
-    │   └── cron-registry.json
-    ├── beta/              # Second sub-agent
-    │   ├── CLAUDE.md
-    │   ├── .claude/skills/
-    │   │   └── research-topic.md
-    │   └── cron-registry.json
-    └── gamma/             # Third sub-agent
-        ├── CLAUDE.md
-        ├── .claude/skills/
-        │   └── check-schedule.md
-        └── cron-registry.json
+I'm giving you a blueprint called ClaudeClaw. You can get it from https://github.com/robonuggets/claudeclaw
+
+Do a quick scan of what's in there and confirm everything looks clean before we proceed.
+
+Once confirmed, read the README and follow the setup instructions. Recommend how it would best apply to our setup and explain it in a non-technical way.
 ```
 
-The template is meant to be flexed, changed, and extended by your agent. It's a starting point, not a rigid framework. Tell your agent what roles you want and it'll adapt the workspace.
+Your agent will read this document, understand the architecture, and guide you through setting it up for your specific needs.
 
 ---
 
 # The ClaudeClaw Blueprint
 
-*Everything below this line is the reference document. Copy from here to give your agent full expertise in the ClaudeClaw architecture.*
+*Everything below this line is the reference document meant for your agent. Use the prompt in the Quick Start above to get started.*
 
 ---
 
